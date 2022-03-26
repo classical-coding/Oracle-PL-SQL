@@ -2,13 +2,13 @@ select * from (
     select  e.*, 
             dense_rank() over (order by sal desc) r 
     from scott.emp e 
-) where r=2; --for 2nd hioghest salary
+) where r=2; --for 2nd highest salary
 
 select * from (
     select  e.*, 
             dense_rank() over (order by sal desc) r 
     from scott.emp e 
-) where r=9; --for 9th hioghest salary
+) where r=9; --for 9th highest salary
 
 select * 
 from scott.emp e 
